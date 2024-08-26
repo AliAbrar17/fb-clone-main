@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+}
+
+.left {
+    flex: 1;
+    padding: 40px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    color: #1877f2;
+    font-size: 40px;
+    margin: 0;
+}
+
+.left p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0367eb;
+}
+
+button.create-account {
+    background-color: #42b72a;
+    /* margin-left: 92px ;
+    margin-right: 92px; */
+    margin: auto;
+    width: 180px;
+    align-items: center;
+    text-align: center;
+}
+button.create-account:hover {
+    background-color: #379e22;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+a.create-page {
+    margin-top: 20px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dddfe2;
+    margin: 10px 0;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left, .right {
+        padding: 20px;
+        flex: none;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left h1 {
+        font-size: 32px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+    .right {
+        border-top: 1px solid #dddfe2;
+    }
+    button {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
